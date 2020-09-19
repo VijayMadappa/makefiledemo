@@ -22,3 +22,18 @@ int divide(int operand1, int operand2)
     else
         return operand1 / operand2;
 }
+int modulus (int operand1, int operand2)
+{
+	if (0== operand2)
+		return 0;
+	else
+		return operand1%operand2;
+}
+
+int greater (int operand1, int operand2)
+{
+	if (operand1>operand2)
+		return operand1;
+	else
+		return operand2;
+}
