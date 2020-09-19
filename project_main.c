@@ -12,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE,MODULUS,GREATER,LESSER,AVERAGE,EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE,MODULUS,GREATER,LESSER,EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. MODULUS\n6. greater\n7. Average\n8. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. MODULUS\n6. greater\n8. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -126,7 +126,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-	case AVERAGE:
+	/*case AVERAGE:
             printf("\n\t(%d + %d)/2 = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
@@ -135,7 +135,8 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-    case 8:
+	*/
+    case 7:
             exit(0);
             break;
         default:
