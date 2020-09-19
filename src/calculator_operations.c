@@ -45,3 +45,13 @@ int lesser (int operand1, int operand2)
 	else
 		return operand1;
 }
+
+int average (int operand1, int operand2)
+{
+	if (0==operand1)
+		return operand2;
+	else if (0==operand2)
+		return operand1;
+	else
+		return (operand1+operand2)/2;
+}
