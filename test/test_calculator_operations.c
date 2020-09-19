@@ -10,6 +10,8 @@ void test_add(void);
 void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
+void test_modulus(void);
+void test_greater(void);
 
 /* Start of the application test */
 int main() {
@@ -26,6 +28,9 @@ int main() {
   CU_add_test(suite, "subtract", test_subtract);
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
+  CU_add_test(suite, "modulus", test_modulus);
+  CU_add_test(suite, "greater", test_modulus);
+  
 
 
 /* Note: Do not edit START*/
@@ -68,4 +73,19 @@ void test_divide(void) {
   
   /* Dummy fail*/
   CU_ASSERT(3 == divide(2, 2));
+}
+
+void test_modulus(void) {
+  CU_ASSERT(0 == modulus(1, 0));
+  CU_ASSERT(1 == modulus(3, 2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(3 == modulus(2, 2));
+}
+
+void test_greater(void) {
+  CU_ASSERT(3 == greater(3, 2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(2 == greater(20, 2));
 }
