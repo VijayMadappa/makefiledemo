@@ -118,7 +118,7 @@ void calculator_menu(void)
             break;
 		    
     case LESSER:
-            printf("\n\t%d > %d = %d\nEnter to continue", 
+            printf("\n\t%d < %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             lesser(calculator_operand1, calculator_operand2));
@@ -127,7 +127,7 @@ void calculator_menu(void)
             getchar();
             break;
 	case AVERAGE:
-            printf("\n\t%d > %d = %d\nEnter to continue", 
+            printf("\n\t(%d + %d)/2 = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             average(calculator_operand1, calculator_operand2));
@@ -135,7 +135,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 8:
+    case 8:
             exit(0);
             break;
         default:
