@@ -13,6 +13,7 @@ void test_divide(void);
 void test_modulus(void);
 void test_greater(void);
 void test_lesser(void);
+void test_average(void);
 
 /* Start of the application test */
 int main() {
@@ -32,6 +33,8 @@ int main() {
   CU_add_test(suite, "modulus", test_modulus);
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "lesser", test_lesser);
+  CU_add_test(suite, "average", test_average);
+  
   
 
 
@@ -97,4 +100,11 @@ void test_lesser(void) {
   
   /* Dummy fail*/
   CU_ASSERT(20 == greater(20, 2));
+}
+
+void test_average(void) {
+  CU_ASSERT(2 == average(2, 2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(20 == average(20, 2));
 }
