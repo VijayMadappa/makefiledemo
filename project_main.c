@@ -117,7 +117,7 @@ void calculator_menu(void)
             getchar();
             break;
 		    
-       case LESSER:
+    case LESSER:
             printf("\n\t%d > %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
@@ -126,7 +126,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-		case AVERAGE:
+	case AVERAGE:
             printf("\n\t%d > %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
