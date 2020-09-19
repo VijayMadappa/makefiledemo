@@ -1,0 +1,5 @@
+Functional requirements are all the arithmetic and scientific operations whose buttons you see, as well as memory store, recall and clear. 
+Turn on and off would also classify as functional. Non functional requirements would be a split second to deliver the answer, 
+any slower and you'd reject the calculator. It should also be scalable I. E. Be able to work with large numbers. 
+Another important non functional requirement is that the key layout should follow the standard layout of a calculator, 
+and the keys should be the right size and shape for usability.
